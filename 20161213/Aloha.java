@@ -1,10 +1,11 @@
 public class Aloha{
 	public static void main(String[] args) {
-		for (int i=0; i<20; i++) {
-		
-				System.out.println(args[0]);
-			
+		System.out.println("input name");
+		System.out.println(name);
+			System.out.println("おわりました");
 			
 		}
+			
+	
 	}
 }

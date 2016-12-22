@@ -15,4 +15,5 @@ public class AlohaWindow{
 		ctnr.add(button);
 		frame.setVisible(true);
 	}
+	
 }

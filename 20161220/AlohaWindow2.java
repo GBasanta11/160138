@@ -1,7 +1,7 @@
 
 import java.awt.*;
 import javax.swing.*;
-public class AlohaWindow1{
+public class AlohaWindow2{
 		Static JFrame frame;
 		Static JLabel label;
 		Static JButton button;

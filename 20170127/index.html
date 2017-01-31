@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>CreateJS</title>
+	<style type="text/css">
+		canvas{
+			background-color: #0000ff;
+		}
+	</style>
+</head>
+<body>
+ <canvas id="myCanvas" width="900" height="600" ></canvas>
+
+  	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  	<script>
+  	
+  		window.addEventListener('load', init);
+
+  		
+  		function init(){
+           var stage=new createjs.Stage("myCanvas");
+
+           var shape=new createjs.Shape();
+
+           shape.graphics.beginFill("#ff0000");
+           shape.graphics.drawRect(100,100,80,80);
+           
+          
+
+           stage.addChild(shape);
+           var muki=+1;
+
+           createjs.Ticker.on('tick',function(){
+
+           	 shape.x += 5*muki;
+
+           	 if(shape.x>800){
+           	 	muki=-1;
+           	 }
+
+           	 if (shape.x<-100) {
+           	 	muki=+1;
+           	 }
+
+
+           	 stage.update();
+           });
+
+  		}
+  		
+  	</script>
+</body>
+
+</html>
